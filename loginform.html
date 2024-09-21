@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="">
+        <style>
+             *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: sans-serif;
+            }
+            body{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-height: 100vh;
+                background: url(/images/background/background3.jpg) no-repeat;
+                background-position: center;
+            }
+            .head{
+                width: 420px;
+                background: transparent;
+                border: 2px solid rgba(255,255,255,0.2);
+                backdrop-filter: blur(20px);
+                box-shadow: 0 0 10px rgba(0,0,0,0.2);
+                color: white;
+                border-radius: 10px;
+                padding: 30px 40px;
+            }
+            .head h1{
+                font-size: 36px;
+                text-align: center;
+            }
+            .head .input-box{
+                width: 100%;
+                height: 50px;
+                background: salmon;
+                margin: 30px 0px;
+                position: relative;
+                border-radius: 25px;
+            }
+            .input-box input{
+                width: 100%;
+                height: 100%;
+                background: white;
+                border: none;
+                outline: none;
+                border: 2px solid rgba(255, 255,255,0.2);
+                border-radius: 50px;
+                font-size: 16px;
+                color: black;
+                padding: 20px 45px 20px 20px;
+            }
+            .input-box input::placeholder{
+                color: red;
+            }
+            .input-box .i{
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 20px;
+            } 
+            .head .remember-forgot{
+                display: flex;
+                justify-content: space-between;
+                font-size: 15px;
+                margin: -15px 0px 15px;
+            }
+            .remember-forgot label input{
+                accent-color: white;
+                margin-right: 3px;
+            }
+            .remember-forgot a{
+                color: white;
+                text-decoration: none;
+            }
+            .remember-forgot a:hover{text-decoration: underline;
+            }
+            .head .btn{
+                width: 100%;
+                height: 45px;
+                background: white;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                cursor: pointer;
+                font-size: 16px;
+                color: #333;
+                font-weight: 600;
+            }
+            .head .register-link{
+                font-size: 15px;
+                text-align: center;
+                margin: 20px 0px 15px;              
+            }
+            .register-link p a {
+                color: white;
+                text-decoration: none;
+                font-weight: 600;
+
+            }
+            .register-link p a:hover{
+                text-decoration: underline;
+            }
+        </style> 
+    </head>
+    <body>
+        <div class="head">
+            <form action="">
+                <h1>Login</h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <img class="i" src="/images/user.png" alt="">
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Possword" required>
+                    <img class="i" src="/images/possword.png" alt="">
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" name="" id="">Remember Me</label>
+                    <a href="#">Forgot Possword</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register-link">
+                    <p>Don't have account? <a href="/registerform.html">Register</a></p>
+                </div>
+            </form>
+
+        </div>
+    </body>
+</html>
